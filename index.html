@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeWinter - Collection Hiver | Par Sara Saidi</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #f59e0b;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+        }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background-color: var(--bg-light); color: var(--text-main); }
+        
+        nav { background-color: var(--primary); color: white; display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.5em; font-weight: bold; color: var(--accent); letter-spacing: 1px; }
+        .nav-links { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
+        .nav-links li a { color: #cbd5e1; text-decoration: none; font-size: 0.95em; font-weight: 600; transition: color 0.2s; }
+        .nav-links li a:hover { color: var(--accent); }
+
+        header { background: linear-gradient(135deg, #0f172a, #334155); color: white; padding: 50px 20px; text-align: center; border-bottom: 4px solid var(--accent); }
+        header h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+        header p { margin: 10px 0 0; font-size: 1.1em; opacity: 0.9; }
+        .owner-badge { display: inline-block; background: rgba(245, 158, 11, 0.2); border: 1px solid var(--accent); color: #fde68a; padding: 6px 18px; border-radius: 20px; font-size: 0.9em; margin-top: 15px; font-weight: 600; }
+
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .section-title { font-size: 1.7em; color: var(--primary); margin-bottom: 25px; padding-bottom: 10px; border-bottom: 3px solid var(--accent); text-align: left; }
+
+        .single-product-container { display: flex; flex-direction: column; background: var(--card-bg); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; margin-bottom: 40px; text-align: left; }
+        @media(min-width: 768px) {
+            .single-product-container { flex-direction: row; }
+        }
+        .product-image-box { width: 100%; max-width: 420px; background: #ffffff; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .product-image-box img { width: 100%; height: auto; max-height: 400px; object-fit: contain; border-radius: 8px; }
+        .product-details { padding: 30px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
+        .product-title { font-size: 1.45em; color: var(--primary); margin: 0 0 15px 0; font-weight: bold; line-height: 1.4; }
+        .product-desc { color: #64748b; font-size: 1.05em; line-height: 1.6; margin-bottom: 25px; }
+        .price { font-size: 1.9em; font-weight: bold; color: #d97706; margin-bottom: 20px; display: block; }
+        
+        .buy-btn { display: block; background-color: var(--accent); color: #0f172a; font-weight: bold; font-size: 1.15em; padding: 16px; text-decoration: none; border-radius: 8px; text-align: center; transition: background 0.3s; box-shadow: 0 4px 12px rgba(245,158,11,0.3); }
+        .buy-btn:hover { background-color: #d97706; color: white; }
+
+        .info-section { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 35px; border-left: 5px solid var(--accent); text-align: left; }
+        .info-section h3 { color: var(--primary); margin-top: 0; font-size: 1.35em; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
+        .info-section p { color: #475569; line-height: 1.7; font-size: 1.05em; }
+
+        .contact-box { background: var(--primary); color: white; border-radius: 12px; padding: 35px; text-align: center; margin-bottom: 40px; }
+        .contact-box h3 { margin-top: 0; font-size: 1.45em; }
+        .email-link { color: var(--accent); font-size: 1.2em; font-weight: bold; text-decoration: none; display: inline-block; margin-top: 10px; }
+
+        footer { background: #090d16; color: #94a3b8; text-align: center; padding: 25px; font-size: 0.9em; }
+
+        @media(max-width: 768px) {
+            .nav-links { display: none; }
+            header h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">❄️ VibeWinter</div>
+    <ul class="nav-links">
+        <li><a href="#products">Catalogue</a></li>
+        <li><a href="#about">Qui sommes-nous</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>VibeWinter - Collection Hiver</h1>
+    <p>Votre destination incontournable pour un hiver douillet et chaleureux</p>
+    <div class="owner-badge">Fondé et géré par Sara Saidi</div>
+</header>
+
+<div class="container" id="products">
+
+    <h2 class="section-title">✨ Notre Catalogue de la Saison</h2>
+    
+    <!-- المنتج الأول -->
+    <div class="single-product-container">
+        <div class="product-image-box">
+            <img src="pyjama.jpg" alt="iClosam Pyjama Polaire Femme">
+        </div>
+        <div class="product-details">
+            <div>
+                <h3 class="product-title">iClosam Pyjama Polaire Femme Hiver Enveloppante, Flanelle Douce</h3>
+                <p class="product-desc">Ensemble de pyjama chaud avec manches longues et pantalon long, idéal pour les nuits froides. Confort absolu et douceur incomparable pour la maison.</p>
+            </div>
+            <div>
+                <span class="price">33,99 €</span>
+                <a href="Https://link.amazon/B06e9X0m3" target="_blank" rel="noopener noreferrer" class="buy-btn">Acheter sur Amazon.fr 🛒</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- المنتج الثاني: بيجامة نويل -->
+    <div class="single-product-container">
+        <div class="product-image-box">
+            <img src="pyjama2.jpg" alt="SAMGU Ensemble Pyjama Noël Famille">
+        </div>
+        <div class="product-details">
+            <div>
+                <h3 class="product-title">SAMGU Ensemble Pyjama Noël Famille Manche Longue (Père, Mère, Enfant)</h3>
+                <p class="product-desc">Costume de pyjama assorti pour toute la famille, motif de Noël festif, en polyester doux, confortable et respirant pour des fêtes chaleureuses.</p>
+            </div>
+            <div>
+                <span class="price">24,99 €</span>
+                <a href="Https://link.amazon/B02C84rGR" target="_blank" rel="noopener noreferrer" class="buy-btn">Acheter sur Amazon.fr 🛒</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="info-section">
+        <h3>À propos de VibeWinter (Qui sommes-nous ?)</h3>
+        <p>Bienvenue sur <strong>VibeWinter</strong>, votre boutique en ligne de référence fondée et gérée par <strong>Sara Saidi</strong>. Nous sélectionnons avec une rigueur absolue des articles de qualité supérieure pour vous garantir un confort douillet et une chaleur incomparable tout au long de la saison hivernale.</p>
+    </div>
+
+    <div id="contact" class="contact-box">
+        <h3>Contactez-nous</h3>
+        <p>Une question sur un produit ou besoin d'assistance ? Écrivez-nous directement :</p>
+        <a href="mailto:Ouin9021@gmail.com" class="email-link">📧 Ouin9021@gmail.com</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 VibeWinter - Géré par Sara Saidi. Tous droits réservés.</p>
+    <p style="font-size: 0.8em; margin-top: 5px;">En tant que Partenaire Amazon, VibeWinter réalise un bénéfice sur les achats remplissant les conditions requises.</p>
+</footer>
+
+</body>
+</html>
